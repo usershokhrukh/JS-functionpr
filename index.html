@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Function</title>
-  <link rel="stylesheet" href="./css/style.css"
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+    <link rel="stylesheet" href="./css/style.css"
+  </head>
   <style>
     @keyframes jumping {
       50% {
         transform: translateY(-5px);
-      }100% {
+      }
+      100% {
         transform: translateY(0px);
       }
     }
@@ -18,7 +19,8 @@
     @keyframes toPath {
       50% {
         transform: translateX(8px);
-      }100% {
+      }
+      100% {
         transform: translateX(0px);
       }
     }
@@ -35,27 +37,37 @@
       0% {
         transform: translateY(100px);
         visibility: visible;
-        
-      }100% {
+      }
+      100% {
         transform: translateY(0px);
         opacity: 0;
       }
     }
   </style>
-<body>
-  <div class="wrapper">
-    <div class="notificate">
-      <p class="notificate__text">if you want watch answers in console, please press 'Enter', else 'Escape'</p>
+  <body>
+    <div class="wrapper">
+      <div class="notificate">
+        <p class="notificate__text">
+          if you want watch answers in console, please press 'Enter', else
+          'Escape'
+        </p>
+      </div>
+      <div class="box">
+        <h6 class="box__title">
+          Numbers: <span class="box__title-span">?</span> &
+          <span class="box__title-span">?</span>
+        </h6>
+        <p class="box__texts">Plus is <span class="box__text-span">?</span></p>
+        <p class="box__texts">Minus is <span class="box__text-span">?</span></p>
+        <p class="box__texts">
+          Divide is <span class="box__text-span">?</span>
+        </p>
+        <p class="box__texts">
+          Multiply is <span class="box__text-span">?</span>
+        </p>
+      </div>
     </div>
-    <div class="box">
-      <h6 class="box__title">Numbers: <span class="box__title-span">?</span> & <span class="box__title-span">?</span></h6>
-      <p class="box__texts">Plus is <span class="box__text-span">?</span></p>
-      <p class="box__texts">Minus is <span class="box__text-span">?</span></p>
-      <p class="box__texts">Divide is <span class="box__text-span">?</span></p>
-      <p class="box__texts">Multiply is <span class="box__text-span">?</span></p>
-    </div>
-  </div>
 
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
