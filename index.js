@@ -19,7 +19,7 @@ function multiFunction(firstNumber, secondNumber) {
 }
 
 function pifagorFunction(firsNumber, secondNumber) {
-  return (firstNumberUser**2) + (secondNumber**2);
+  return firstNumberUser ** 2 + secondNumber ** 2;
 }
 
 alert("===========The numbers will work==========");
@@ -90,10 +90,9 @@ const functionApprove = () => {
         animation-duration: 0.3s;
         animation-delay: 1.2s;
       `;
-      elTextSpan[4].textContent = Math.sqrt(pifagorFunction(
-        firstNumberUser,
-        secondNumberUser
-      )).toFixed(3);
+      elTextSpan[4].textContent = Math.sqrt(
+        pifagorFunction(firstNumberUser, secondNumberUser)
+      ).toFixed(3);
     } else if (e.key == "Enter" && !repeat) {
       repeat = true;
 
@@ -150,7 +149,11 @@ const functionApprove = () => {
       console.log(
         `~~~~Multiply is ${multiFunction(firstNumberUser, secondNumberUser)}\n`
       );
-      console.log(`~~~~Hypotenuse is ${Math.sqrt(pifagorFunction(firstNumberUser, secondNumberUser)).toFixed(3)}`)
+      console.log(
+        `~~~~Hypotenuse is ${Math.sqrt(
+          pifagorFunction(firstNumberUser, secondNumberUser)
+        ).toFixed(3)}`
+      );
     }
   });
 };
