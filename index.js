@@ -18,6 +18,10 @@ function multiFunction(firstNumber, secondNumber) {
   return firstNumber * secondNumber;
 }
 
+function pifagorFunction(firsNumber, secondNumber) {
+  return (firstNumberUser**2) + (secondNumber**2);
+}
+
 alert("===========The numbers will work==========");
 const firstNumberUser = +prompt("Please enter first number: ").trim();
 elTitleSpan[0].textContent = firstNumberUser;
@@ -80,6 +84,16 @@ const functionApprove = () => {
         firstNumberUser,
         secondNumberUser
       );
+
+      elTextSpan[4].style.cssText = `
+        animation-name: jumping;
+        animation-duration: 0.3s;
+        animation-delay: 1.2s;
+      `;
+      elTextSpan[4].textContent = Math.sqrt(pifagorFunction(
+        firstNumberUser,
+        secondNumberUser
+      )).toFixed(3);
     } else if (e.key == "Enter" && !repeat) {
       repeat = true;
 
@@ -114,6 +128,13 @@ const functionApprove = () => {
         animation-delay: 0.3s;
       `;
       elText[3].textContent = "Multiply in console";
+
+      elText[4].style.cssText = `
+        animation-name: toPath;
+        animation-duration: 0.4s;
+        animation-delay: 0.4s;
+      `;
+      elText[4].textContent = "Hypotenuse in console";
       console.log(
         `~~~~~~~~~~Numbers: ${firstNumberUser} & ${secondNumberUser}\n`
       );
@@ -127,8 +148,9 @@ const functionApprove = () => {
         `~~~~Divide is ${divideFunction(firstNumberUser, secondNumberUser)}\n`
       );
       console.log(
-        `~~~~Multiply is ${multiFunction(firstNumberUser, secondNumberUser)}`
+        `~~~~Multiply is ${multiFunction(firstNumberUser, secondNumberUser)}\n`
       );
+      console.log(`~~~~Hypotenuse is ${Math.sqrt(pifagorFunction(firstNumberUser, secondNumberUser)).toFixed(3)}`)
     }
   });
 };
